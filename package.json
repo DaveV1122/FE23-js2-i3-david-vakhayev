@@ -1,0 +1,14 @@
+{
+  "name": "fe23-js2-i3-david-vakhayev",
+  "version": "1.0.0",
+  "description": "Dummy webshop built with TypeScript, Parcel and DummyJSON",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url ./"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dummy Webshop</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.ts"></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div>
+          <p class="eyebrow">DummyJSON Products</p>
+          <h1>Dummy Webshop</h1>
+        </div>
+
+        <button class="cart-button" type="button">
+          Cart
+        </button>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="search-section">
+        <h2>Search products</h2>
+
+        <form id="search-form" class="search-form">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search for phones, laptops, perfume..."
+            autocomplete="off"
+          />
+
+          <button type="submit">
+            Search
+          </button>
+        </form>
+      </section>
+
+      <section class="toolbar">
+        <p id="result-count">Loading products...</p>
+
+        <button id="show-all-button" type="button">
+          Show all
+        </button>
+      </section>
+
+      <section id="products-container" class="products-grid">
+      </section>
+
+      <p id="message" class="message"></p>
+    </main>
+  </body>
+</html>
