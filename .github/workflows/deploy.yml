@@ -1,4 +1,4 @@
-name: Deploy Vite React to GitHub Pages
+name: Deploy Parcel to GitHub Pages
 
 on:
   push:
@@ -21,12 +21,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
+
       - run: npm ci
       - run: npm run build
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: docs
 
   deploy:
     environment:
